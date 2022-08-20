@@ -24,7 +24,11 @@
         },
         "type": {
             "type": "enumeration",
-            "enum": ["video", "text", "podcast"],
+            "enum": [
+                "video",
+                "text",
+                "podcast"
+            ],
             "default": "video"
         },
         "url": {
@@ -44,7 +48,9 @@
             "type": "media",
             "multiple": false,
             "required": false,
-            "allowedTypes": ["images"]
+            "allowedTypes": [
+                "images"
+            ]
         },
         "content": {
             "type": "text",
