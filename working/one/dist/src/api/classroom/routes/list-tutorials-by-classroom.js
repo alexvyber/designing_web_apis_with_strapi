@@ -13,13 +13,13 @@ module.exports = {
         //     path: '/enroll/:id',
         //     handler: 'classroom.enroll',
         //   },
-        // {
-        //   method: 'POST',
-        //   path: '/classrooms/seed',
-        //   handler: 'classroom.seed',
-        //   config: {
-        //     auth: false,
-        //   },
-        // },
+        {
+            method: "POST",
+            path: "/classrooms/seed",
+            handler: "classroom.seed",
+            config: {
+                auth: false,
+            },
+        },
     ],
 };

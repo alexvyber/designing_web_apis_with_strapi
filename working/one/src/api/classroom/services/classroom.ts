@@ -30,14 +30,6 @@ export default factories.createCoreService(
       // Calling the default core controller
       const { results, pagination } = await super.find(...args);
 
-      // some custom logic
-      results.forEach((result) => {
-        result.counter = 1;
-        result.pussy = "pussy";
-      });
-
-      pagination.total = results.length + 10;
-
       return { results, pagination };
     },
 
