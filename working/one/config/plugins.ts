@@ -1,4 +1,8 @@
-export default {
+export default (env) => ({
+  lms: {
+    enabled: true,
+    resolve: "./src/plugins/lms",
+  },
   "users-permissions": {
     config: {
       jwt: {
@@ -6,4 +10,4 @@ export default {
       },
     },
   },
-};
+});
